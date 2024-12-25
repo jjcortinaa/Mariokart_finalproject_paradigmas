@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6041bc516f3b14a5881bfc7cb306f064, type: 3}
+  m_Name: ShyGuy
+  m_EditorClassIdentifier: 
+  characterPlay: {fileID: 4064563329647277389, guid: 07b9d5a2d960d4915a1b08af976f24cf, type: 3}
+  image: {fileID: 21300000, guid: d61341e3fb325452b94cfa811f041a6d, type: 3}
+  charname: ShyGuy
