@@ -25,17 +25,17 @@ public class CharcterSelection : MonoBehaviour
             index = 0;
         }
 
-        CambiarPantalla();
+        ChangeScreen();
     }
 
-    private void CambiarPantalla()
+    private void ChangeScreen()
     {
         PlayerPrefs.SetInt("PlayerIndex", index);
         image.sprite = gameManager.characters[index].image;
         charname.text = gameManager.characters[index].charname;
     }
 
-    public void SiguientePersonaje()
+    public void NextCharacter()
     {
         if(index == gameManager.characters.Count - 1)
         {
@@ -45,10 +45,10 @@ public class CharcterSelection : MonoBehaviour
         {
             index += 1;
         }
-        CambiarPantalla();
+        ChangeScreen();
     }
 
-    public void AnteriorPersonaje()
+    public void PreviousCharacter()
     {
         if (index == 0)
         {
@@ -58,10 +58,10 @@ public class CharcterSelection : MonoBehaviour
         {
             index -= 1;
         }
-        CambiarPantalla();
+        ChangeScreen();
     }
 
-    public void IniciarJuego()
+    public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

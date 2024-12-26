@@ -19,7 +19,7 @@ public class CarController2 : MonoBehaviour
         public TransmissionMode transmissionMode;
 
     }
-
+    public bool canMove = false;
     public float maxAcceleration = 30.0f;
     public float breakAcceleration = 50.0f;
 
@@ -39,8 +39,11 @@ public class CarController2 : MonoBehaviour
     }
 
     void Update()
-    {
-        GetInputs();
+    {   if (canMove)
+        {
+            GetInputs();
+        }
+        
     }
 
     void LateUpdate()

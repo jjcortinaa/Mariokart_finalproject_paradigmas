@@ -659,11 +659,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
   m_PrefabInstance: {fileID: 1703582513785332606}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1974052820666605103 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
-  m_PrefabInstance: {fileID: 1703582513785332606}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3083114080764591351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -733,11 +728,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
---- !u!1 &2740442821486395814 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
-  m_PrefabInstance: {fileID: 3083114080764591351}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3261682099505535772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
@@ -812,11 +802,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
---- !u!1 &4007546787428210197 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
-  m_PrefabInstance: {fileID: 4277508426166676292}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4383825691445742767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
@@ -909,9 +894,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a98861055c84349b4b1649a477417eba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3533154327945360972}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a98861055c84349b4b1649a477417eba, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1525359597767121556}
   m_SourcePrefab: {fileID: 100100000, guid: a98861055c84349b4b1649a477417eba, type: 3}
 --- !u!1 &4684744194552533976 stripped
 GameObject:
@@ -987,35 +969,7 @@ MonoBehaviour:
   acceleration: 700
   breakingForce: 400
   maxTurnAngle: 30
---- !u!114 &1525359597767121556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4684744194552533976}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e75e7d1875f2459784435a05e9afed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAcceleration: 30
-  breakAcceleration: 50
-  turnSensitivity: 0.5
-  maxSteerAngle: 20
-  wheels:
-  - wheelModel: {fileID: 2740442821486395814}
-    wheelCollider: {fileID: 76506363071600410}
-    transmissionMode: 0
-  - wheelModel: {fileID: 4007546787428210197}
-    wheelCollider: {fileID: 8100074299765218116}
-    transmissionMode: 0
-  - wheelModel: {fileID: 8381590752218769088}
-    wheelCollider: {fileID: 3919227820801038655}
-    transmissionMode: 1
-  - wheelModel: {fileID: 1974052820666605103}
-    wheelCollider: {fileID: 985458748269892271}
-    transmissionMode: 1
+  canMove: 0
 --- !u!4 &5352632244342147426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a98861055c84349b4b1649a477417eba, type: 3}
@@ -1090,11 +1044,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
---- !u!1 &8381590752218769088 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}
-  m_PrefabInstance: {fileID: 8687458732017179537}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9158831585645214842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 251af7a4cd824451194ef68c591b58ba, type: 3}

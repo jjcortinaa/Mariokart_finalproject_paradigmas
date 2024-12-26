@@ -22,29 +22,34 @@ public class CarController : MonoBehaviour
     public float maxTurnAngle = 60f;
     private float currentTurnAngle = 0f;
 
+    public bool canMove = false;
+
     private void FixedUpdate()
     {
-        currentAcceleration = acceleration * Input.GetAxis("Vertical");
+        if (canMove) {
+            currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.Space))
-            currentBreakForce = breakingForce;
-        else
-            currentBreakForce = 0f;
+            if (Input.GetKey(KeyCode.Space))
+                currentBreakForce = breakingForce;
+            else
+                currentBreakForce = 0f;
 
-        frontRight.motorTorque = currentAcceleration;
-        frontLeft.motorTorque = currentAcceleration;
+            frontRight.motorTorque = currentAcceleration;
+            frontLeft.motorTorque = currentAcceleration;
 
-        frontRight.brakeTorque = currentBreakForce;
-        backRight.brakeTorque = currentBreakForce;
-        frontLeft.brakeTorque = currentBreakForce;
-        backLeft.brakeTorque = currentBreakForce;
+            frontRight.brakeTorque = currentBreakForce;
+            backRight.brakeTorque = currentBreakForce;
+            frontLeft.brakeTorque = currentBreakForce;
+            backLeft.brakeTorque = currentBreakForce;
 
-        currentTurnAngle = maxTurnAngle* Input.GetAxis("Horizontal");
-        frontLeft.steerAngle = currentTurnAngle;
-        frontRight.steerAngle = currentTurnAngle;
+            currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
+            frontLeft.steerAngle = currentTurnAngle;
+            frontRight.steerAngle = currentTurnAngle;
 
-        UpdateWheel(frontLeft,frontLeftTransform);
-        UpdateWheel(frontRight,frontRightTransform);
+            UpdateWheel(frontLeft, frontLeftTransform);
+            UpdateWheel(frontRight, frontRightTransform);
+        }
+        
     }
 
     void UpdateWheel(WheelCollider collider, Transform transform)

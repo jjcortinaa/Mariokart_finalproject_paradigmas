@@ -550,7 +550,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 961730016}
         m_TargetAssemblyTypeName: CharcterSelection, Assembly-CSharp
-        m_MethodName: AnteriorPersonaje
+        m_MethodName: PreviousCharacter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -986,7 +986,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 961730016}
         m_TargetAssemblyTypeName: CharcterSelection, Assembly-CSharp
-        m_MethodName: IniciarJuego
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1253,7 +1253,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 961730016}
         m_TargetAssemblyTypeName: CharcterSelection, Assembly-CSharp
-        m_MethodName: SiguientePersonaje
+        m_MethodName: NextCharacter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

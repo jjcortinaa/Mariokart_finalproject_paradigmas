@@ -8,7 +8,8 @@ public class InitialPlayer : MonoBehaviour
     private void Start()
     {
         int playerIndex = PlayerPrefs.GetInt("PlayerIndex");
-        Instantiate(GameManager.Instance.characters[playerIndex].characterPlay, transform.position, Quaternion.identity);
+        GameObject selectedCar = Instantiate(GameManager.Instance.characters[playerIndex].characterPlay, transform.position, Quaternion.identity);
+        selectedCar.tag = "Player";
     }
 
 }
