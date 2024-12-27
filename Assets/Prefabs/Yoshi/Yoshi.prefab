@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7366508815722025732}
-  - component: {fileID: 599534834579556702}
   m_Layer: 0
   m_Name: lfWheel
   m_TagString: Untagged
@@ -34,45 +33,6 @@ Transform:
   - {fileID: 9122667034338111858}
   m_Father: {fileID: 7837671042978052944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &599534834579556702
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4632129019192198}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 20
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 0
-  m_ProvidesContacts: 0
 --- !u!1 &380746563242114761
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +306,7 @@ MonoBehaviour:
   acceleration: 800
   breakingForce: 400
   maxTurnAngle: 30
+  canMove: 0
 --- !u!1 &1842054546398433773
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +316,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74034474823928965}
-  - component: {fileID: 8565289580545295857}
   m_Layer: 0
   m_Name: rbWheel
   m_TagString: Untagged
@@ -380,45 +340,6 @@ Transform:
   - {fileID: 2910572944355773085}
   m_Father: {fileID: 7837671042978052944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &8565289580545295857
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1842054546398433773}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 20
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 0
-  m_ProvidesContacts: 0
 --- !u!1 &2319257715682824582
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +438,6 @@ GameObject:
   - component: {fileID: 720665860703847532}
   - component: {fileID: 4800605504232437839}
   - component: {fileID: 8217284569093038222}
-  - component: {fileID: 8383478387264850600}
   m_Layer: 0
   m_Name: ID27
   m_TagString: Untagged
@@ -611,25 +531,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2484441, y: 0.51570934, z: 2.051399}
   m_Center: {x: -0.0008680026, y: 0.36677656, z: 0.047370516}
---- !u!114 &8383478387264850600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2463842140512983694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ac96c37e2a14f9cabf947cbefc16dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2330931919194815173}
-  lfW: {fileID: 599534834579556702}
-  rfW: {fileID: 8683564767927203953}
-  lbW: {fileID: 8483706211714999410}
-  rbW: {fileID: 8565289580545295857}
-  driveSpeed: 10000
-  steerSpeed: 40
 --- !u!1 &2533055741395959137
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +611,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8057830051703222904}
-  - component: {fileID: 8483706211714999410}
   m_Layer: 0
   m_Name: lbWheel
   m_TagString: Untagged
@@ -735,45 +635,6 @@ Transform:
   - {fileID: 7659816651373334751}
   m_Father: {fileID: 7837671042978052944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &8483706211714999410
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2740126893864467094}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 20
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 0
-  m_ProvidesContacts: 0
 --- !u!1 &2868893474814450801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1195,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5366415510668668061}
-  - component: {fileID: 8683564767927203953}
   m_Layer: 0
   m_Name: rfWheel
   m_TagString: Untagged
@@ -1359,45 +1219,6 @@ Transform:
   - {fileID: 5801848473147012186}
   m_Father: {fileID: 7837671042978052944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &8683564767927203953
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7790193475369752743}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 20
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 0
-  m_ProvidesContacts: 0
 --- !u!1 &8466114887583723496
 GameObject:
   m_ObjectHideFlags: 0

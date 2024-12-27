@@ -22,7 +22,7 @@ public class CarController : MonoBehaviour
     public float maxTurnAngle = 60f;
     private float currentTurnAngle = 0f;
 
-    public bool canMove = false;
+    public static bool canMove = false;
 
     private void FixedUpdate()
     {

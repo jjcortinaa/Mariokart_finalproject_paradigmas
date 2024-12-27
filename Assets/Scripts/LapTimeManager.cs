@@ -15,13 +15,16 @@ public class LapTimeManager : MonoBehaviour
     public GameObject secondBox;
     public GameObject miliBox;
 
-
-
+    public static float rawTime;
+    public static bool raceFinished = false;
 
 
     void Update()
     {
+
+        if (raceFinished) return;   
         miliCount += Time.deltaTime * 10;
+        rawTime += Time.deltaTime;
         miliDisplay = miliCount.ToString("F0");
         miliBox.GetComponent<TextMeshProUGUI>().text = "" + miliDisplay;
 
