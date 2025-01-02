@@ -303,10 +303,9 @@ MonoBehaviour:
   backLeft: {fileID: 691748539401019022}
   frontLeftTransform: {fileID: 7366508815722025732}
   frontRightTransform: {fileID: 5366415510668668061}
-  acceleration: 800
+  acceleration: 700
   breakingForce: 400
-  maxTurnAngle: 30
-  canMove: 0
+  maxTurnAngle: 25
 --- !u!1 &1842054546398433773
 GameObject:
   m_ObjectHideFlags: 0
