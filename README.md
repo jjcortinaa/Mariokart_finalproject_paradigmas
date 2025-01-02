@@ -1,6 +1,5 @@
 # Final_Project
-
-https://github.com/jjcortinaa/Final_Project.git
+https://github.com/jjcortinaa/Mariokart_finalproject_paradigmas.git
 
 # Mariano Kart
 
