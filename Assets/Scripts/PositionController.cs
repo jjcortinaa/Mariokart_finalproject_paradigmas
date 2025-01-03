@@ -13,7 +13,7 @@ public class PositionController : MonoBehaviour
     public void SetPosition(Vector3 vector3)
     {
         currentPos = vector3;
-        Debug.Log("position set" + currentPos);
+        
     }
     public void setRotation(Quaternion rotation)
     {

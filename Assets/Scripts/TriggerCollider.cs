@@ -27,9 +27,6 @@ public class TriggerCollider : MonoBehaviour
             positionController.SetPosition(pos);
             positionController.setRotation(rot);
         }
-        else
-        {
-            Debug.LogWarning("El objeto no tiene un componente PositionController: " + other.gameObject.name);
-        }
+        
     }
 }
