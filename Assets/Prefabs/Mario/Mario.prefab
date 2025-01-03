@@ -611,10 +611,10 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294049519065031149}
   serializedVersion: 4
-  m_Mass: 800
+  m_Mass: 700
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: -0.5, z: 0}
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -648,10 +648,9 @@ MonoBehaviour:
   backLeft: {fileID: 26597488188163048}
   frontLeftTransform: {fileID: 3556874848193226765}
   frontRightTransform: {fileID: 7008637919671360460}
-  acceleration: 700
-  breakingForce: 400
-  maxTurnAngle: 15
-  canMove: 0
+  acceleration: 725
+  breakingForce: 1000000
+  maxTurnAngle: 25
 --- !u!4 &1927175065432144727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 868e0223f4a6540dba8fe9fdf50304b6, type: 3}

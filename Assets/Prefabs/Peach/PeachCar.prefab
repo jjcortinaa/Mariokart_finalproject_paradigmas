@@ -823,7 +823,7 @@ Rigidbody:
   m_Mass: 700
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: -0.5, z: 0}
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -858,9 +858,8 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 3261682099505535772}
   frontRightTransform: {fileID: 4383825691445742767}
   acceleration: 700
-  breakingForce: 400
-  maxTurnAngle: 30
-  canMove: 0
+  breakingForce: 1000000
+  maxTurnAngle: 25
 --- !u!4 &5352632244342147426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a98861055c84349b4b1649a477417eba, type: 3}
