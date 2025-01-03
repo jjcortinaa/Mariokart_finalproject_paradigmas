@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+
     public List<Characters> characters;
 
     private void Awake()
@@ -20,4 +21,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+
+
 }
