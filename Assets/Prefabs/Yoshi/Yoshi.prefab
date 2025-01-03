@@ -183,6 +183,8 @@ GameObject:
   - component: {fileID: 1551254517611763353}
   - component: {fileID: 2330931919194815173}
   - component: {fileID: 2547915683985753596}
+  - component: {fileID: 4809443019874861838}
+  - component: {fileID: 1953312401360787273}
   m_Layer: 0
   m_Name: Yoshi
   m_TagString: Untagged
@@ -303,9 +305,42 @@ MonoBehaviour:
   backLeft: {fileID: 691748539401019022}
   frontLeftTransform: {fileID: 7366508815722025732}
   frontRightTransform: {fileID: 5366415510668668061}
-  acceleration: 775
+  acceleration: 800
   breakingForce: 1000000
   maxTurnAngle: 25
+--- !u!65 &4809443019874861838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553766228709136482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.79770803, y: 1.043942, z: 1.7078934}
+  m_Center: {x: 0.0020520687, y: 0.645329, z: 0.13895035}
+--- !u!114 &1953312401360787273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553766228709136482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4513ccc4f317406b96057e832e5566a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1842054546398433773
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +471,6 @@ GameObject:
   - component: {fileID: 3034228021054887276}
   - component: {fileID: 720665860703847532}
   - component: {fileID: 4800605504232437839}
-  - component: {fileID: 8217284569093038222}
   m_Layer: 0
   m_Name: ID27
   m_TagString: Untagged
@@ -509,27 +543,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8217284569093038222
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2463842140512983694}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.2484441, y: 0.51570934, z: 2.051399}
-  m_Center: {x: -0.0008680026, y: 0.36677656, z: 0.047370516}
 --- !u!1 &2533055741395959137
 GameObject:
   m_ObjectHideFlags: 0
