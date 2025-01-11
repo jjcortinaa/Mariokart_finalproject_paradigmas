@@ -1483,6 +1483,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8eefa6b61bae447c85db0a23f926d55, type: 2}
   - {fileID: 11400000, guid: 22a0569faf207454c8786a6678e88aaa, type: 2}
   - {fileID: 11400000, guid: 5d8f1d430d56543aea40e37e13a19925, type: 2}
+  AgentsAI:
+  - {fileID: 6872025077284875836, guid: 36b56769a4cd84a4eb1b41116728328e, type: 3}
+  - {fileID: 1553766228709136482, guid: fc31632f8654148a880641b218095875, type: 3}
+  - {fileID: 1294049519065031149, guid: f66066b5197d741988d1b259df39cbe2, type: 3}
+  - {fileID: 4064563329647277389, guid: dfde7e47d5b3049b9a2c00225a03a967, type: 3}
 --- !u!4 &1762884662
 Transform:
   m_ObjectHideFlags: 0

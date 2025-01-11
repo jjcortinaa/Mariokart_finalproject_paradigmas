@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
 
     public List<Characters> characters;
+    public List<GameObject> AgentsAI;
 
     private void Awake()
     {
