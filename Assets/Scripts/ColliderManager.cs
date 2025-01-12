@@ -7,6 +7,7 @@ public class ColliderManager : MonoBehaviour
     private FallManager fallManager;
     private Rigidbody rb;
     private PositionController pc;
+    private AIMovement ai;
     private Vector3 zero = new Vector3(0, 0, 0);
     private Vector3 origin = new Vector3(0, 0, 0);
     private bool found = false;
@@ -22,22 +23,10 @@ public class ColliderManager : MonoBehaviour
             fallManager.FallingCarActions += HandleFall;
             found = true;
         }
+
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
 
-        if (!found)
-        {
-            fallManager = FindObjectOfType<FallManager>();
-            if (fallManager != null)
-            {
-                fallManager.FallingCarActions += HandleFall;
-                found = true;
-            }
-        }
-    }
 
     private void HandleFall(GameObject gameObject)
     {

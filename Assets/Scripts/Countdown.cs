@@ -33,5 +33,6 @@ public class Countdown : MonoBehaviour
 
         lapTimer.SetActive(true);
         CarController.canMove = true;
+        AIMovement.canMove = true;
     }
 }

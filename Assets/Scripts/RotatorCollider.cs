@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerColliderObject : MonoBehaviour
+public class RotatorCollider : MonoBehaviour
 {
-    private HashSet<GameObject> objectsInArea = new HashSet<GameObject>();
     public int angle;
 
     // Start is called before the first frame update
@@ -20,13 +19,10 @@ public class TriggerColliderObject : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (!objectsInArea.Contains(other.gameObject))
-        {
-            GameObject player = other.gameObject;
-            objectsInArea.Add(player);
-            AIMovement aIMovement = player.GetComponent<AIMovement>();
-            aIMovement.RotateObject(angle);
 
-        }
+        GameObject player = other.gameObject;
+        AIMovement aIMovement = player.GetComponent<AIMovement>();
+        aIMovement.RotateObject(angle);
+
     }
 }

@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AIMovement : MonoBehaviour
 {
@@ -7,13 +6,18 @@ public class AIMovement : MonoBehaviour
     private float driveSpeed = 50f;
     private float steerSpeed = 25f;
     private int performance = 0;
+    private int maxTurnAngle = 10;
     public WheelCollider lfW, rfW, lbW, rbW;
     public Transform lfWTransform, rfWTransform, lbWTransform, rbWTransform;
+    public static bool canMove = false;
 
     private void FixedUpdate()
     {
-
-        ForwardMovement();
+        if (canMove == true)
+        {
+            ForwardMovement();
+            //SidewaysMovement();
+        }
 
     }
 
@@ -27,6 +31,30 @@ public class AIMovement : MonoBehaviour
 
 
     }
+    /*
+    private void SidewaysMovement()
+    {
+        float currentTurnAngle = maxTurnAngle * Random.Range(-0.01f, 0.01f);
+        lfW.steerAngle = currentTurnAngle;
+        rfW.steerAngle = currentTurnAngle;
+
+        UpdateWheel(lfW, lfWTransform);
+        UpdateWheel(rfW, rfWTransform);
+    }
+    */
+
+
+
+    void UpdateWheel(WheelCollider collider, Transform transform)
+    {
+        Vector3 position;
+        Quaternion rotation;
+        collider.GetWorldPose(out position, out rotation);
+
+        transform.position = position;
+        transform.rotation = rotation;
+    }
+    
 
     public void RotateObject(float angle)
     {
